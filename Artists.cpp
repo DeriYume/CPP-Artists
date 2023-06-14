@@ -10,7 +10,6 @@ class artist {
 	public:
 		artist();
 		void print();
-		void ageOverForty();
 		int get_songs() { return songs; }
 		string get_country() { return country; }
 		int get_age() { return age; }
@@ -35,12 +34,6 @@ artist::artist() {
 
 void artist::print() {
 	cout << name << " " << age << " " << country << " " << songs << endl;
-}
-
-void artist::ageOverForty() {
-	if (age > 40) cout << "The artist is older than 40.\n";
-	else cout << "The artist is younger than 40.\n";
-
 }
 
 void youngBulgarianArtists(int size, artist arrtist[]) {
